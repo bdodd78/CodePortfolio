@@ -1,0 +1,54 @@
+<DOCTYPE!HTML>
+
+<html>
+    <head>
+        <title>Book Lookup</title>
+        <link href="bin/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="bin/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" rel="stylesheet">
+        <style type="text/css">
+            .my-new-list {font-weight:normal; color:green;font-size:1em;}
+            li { padding-left: 10px;}
+            .level2 {padding-left: 20px; }
+            
+            .searchField {}
+            .saveButton {}
+            .searchRadio {}
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Book Lookup</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Library</h1>
+                <p>Look up books from the Google Books location by Title, Author or ISBN.</p>
+            </div>
+            <div id="bookForm" class="form-inline">
+                <label class="control-label">
+                    <input type="radio" value="title" id="radioTitle" name="searchCriteria" class="searchRadio"> Book Title:
+                    <input type="text" id="searchTitle" class="form-control input-sm searchField" />
+                </label>
+                <label class="control-label">
+                    <input type="radio" value="authors" id="radioAuthor" name="searchCriteria"  class="searchRadio">Book Author: 
+                    <input type="text" id="searchAuthor" class="form-control input-sm searchField" />
+                </label>
+                <label class="control-label">
+                    <input type="radio" value="isbn" id="radioISBN" name="searchCriteria"  class="searchRadio"checked="checked">ISBN: 
+                    <input type="text" id="searchISBN" value="0380510944" class="form-control input-sm searchField"/> 
+                </label> 
+                <!--<button id='listAll' class="btn btn-sm btn-primary">Search for Book</button>         -->
+                <button id='saveList' class="btn btn-sm btn-primary">Search</button>
+            </div>
+            <p></p>
+            <div id='dataDiv' class="my-new-list"></div>
+            <div id='saveDiv'></div>
+            <script src="bin/jquery-2.1.4.min.js"></script>
+            <script src="getGoogleBook.js"></script>
+        </div>
+    </body>
+</html>
