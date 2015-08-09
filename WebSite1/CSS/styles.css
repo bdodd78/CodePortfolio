@@ -1,0 +1,50 @@
+﻿body {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 1em;
+    color: blue;
+}
+.menupanel {
+    background-color:#EEEEEE;
+    border: 1px solid black;
+    padding-left:5px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+a {text-decoration:none;
+   color:blue;
+}
+a:hover {text-decoration:underline;
+         color:red;
+}
+.hiddenItem {
+    visibility:hidden;
+}
+
+.editRow {
+    background-color:#7C6F57;
+    font-weight:bold;
+    color:white;
+}
+.footer, .header {
+    background-color:#1c5e55;
+    font-weight:bold;
+    color:white;
+}
+.alternate {
+    background-color:white;
+}
+
+.row {
+    background-color:#e3eaeb;
+}
+.selectRow {
+    background-color:#C5BBAF;
+    font-weight:bold;        
+    color:#333333;
+}
+.fieldHeader {
+    background-color:#C5BBAF;
+    font-weight:bold;
+}
